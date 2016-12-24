@@ -19,6 +19,11 @@ block content
             p.text-faded
               | Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
             a.page-scroll.btn.btn-default.btn-xl.sr-button(href='#services') Get Started!
+    section#master
+      .container
+        .bs-example(data-example-id='responsive-embed-16by9-iframe-youtube')
+          .embed-responsive.embed-responsive-16by9
+            iframe.embed-responsive-item(src='//www.youtube.com/embed/He_N9KczSOM?start=28&end=206', allowfullscreen='')             
     section#services
       .container
         .row
@@ -47,6 +52,10 @@ block content
               i.fa.fa-4x.fa-heart.text-primary.sr-icons
               h3 Made with Love
               p.text-muted You have to make your websites with love these days!
+    section#school
+      .container-fluid
+        #map(style='width:100%;height:400px;background:yellow')
+          h3 Map comes here             
     section#portfolio.no-padding
       .container-fluid
         .row.no-gutter.popup-gallery
@@ -129,3 +138,8 @@ block content
     script(src='vendor/magnific-popup/jquery.magnific-popup.min.js')
     // Theme JavaScript
     script(src='js/creative.min.js')
+    script(src='jquery/home/map.js')
+    //script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU &callback=schoolLocation')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCexpNP7Hw6u60E8gHXYhK5Ldqvqdqdi1o&callback=schoolLocation')
+    
+
