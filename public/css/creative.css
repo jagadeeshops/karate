@@ -107,7 +107,8 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
+    /*changing background colour here*/
+    background-color: #2f2d2d;
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {

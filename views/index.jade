@@ -2,51 +2,44 @@ extends layout
 block content
   body#page-top
     include ./header
-    header
-      .header-content
-        .header-content-inner
-          h1#homeHeading Your Favorite Source of Free Bootstrap Themes
-          hr
-          p
-            | Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
-          a.btn.btn-primary.btn-xl.page-scroll(href='#about') Find Out More
-    section#carou
-      #myCarousel.carousel.slide(data-ride='carousel')
-        // Indicators
-        ol.carousel-indicators
-          li.active(data-target='#myCarousel', data-slide-to='0')
-          li(data-target='#myCarousel', data-slide-to='1')
-          li(data-target='#myCarousel', data-slide-to='2')
-          li(data-target='#myCarousel', data-slide-to='3')
-        // Wrapper for slides
-        .carousel-inner(role='listbox')
-          .item.active
-            img(src='img/carousel/1.png', alt='Chania', width='460', height='345')
-            .carousel-caption
-              h3 Chania
-              p The atmosphere in Chania has a touch of Florence and Venice.
-          .item
-            img(src='img/carousel/2.png', alt='Chania', width='460', height='345')
-            .carousel-caption
-              h3 Chania
-              p The atmosphere in Chania has a touch of Florence and Venice.
-          .item
-            img(src='img/carousel/3.png', alt='Flower', width='460', height='345')
-            .carousel-caption
-              h3 Flowers
-              p Beatiful flowers in Kolymbari, Crete.
-          .item
-            img(src='img/carousel/4.png', alt='Flower', width='460', height='345')
-            .carousel-caption
-              h3 Flowers
-              p Beatiful flowers in Kolymbari, Crete.
-        // Left and right controls
-        a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-          span.sr-only Previous
-        a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-          span.sr-only Next          
+    br
+    br
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+        li(data-target='#myCarousel', data-slide-to='3')
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='img/carousel/1.png', alt='Chania', width='460', height='345')
+          .carousel-caption
+            h3 Chania
+            p The atmosphere in Chania has a touch of Florence and Venice.
+        .item
+          img(src='img/carousel/2.png', alt='Chania', width='460', height='345')
+          .carousel-caption
+            h3 Chania
+            p The atmosphere in Chania has a touch of Florence and Venice.
+        .item
+          img(src='img/carousel/3.png', alt='Flower', width='460', height='345')
+          .carousel-caption
+            h3 Flowers
+            p Beatiful flowers in Kolymbari, Crete.
+        .item
+          img(src='img/carousel/4.png', alt='Flower', width='460', height='345')
+          .carousel-caption
+            h3 Flowers
+            p Beatiful flowers in Kolymbari, Crete.
+      // Left and right controls
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next          
     section#about.bg-primary
       .container
         .row
