@@ -22,9 +22,12 @@ fi
 # this script will be executed on the remote server. 
 #so all inputs to the below script has to be within
 sshpass -e ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER 'set -e;
+#########
 SLEEP_TIME_AFTER_APP_STARTS=20
 APPNAME=karate
-cd mysite;
+APPDIR=karate
+#########
+cd $APPDIR;
 date;
 git pull
 pm2 reload $APPNAME
