@@ -1,3 +1,13 @@
 language: node_js
 node_js:
-  - '6'
+  - "6"
+dist: trusty  
+before_install:
+- sudo apt-get update -qq
+- cd /tmp
+- wget http://launchpadlibrarian.net/83105323/sshpass_1.05-1_amd64.deb
+- sudo dpkg -i sshpass_1.05-1_amd64.deb
+- sshpass -V
+- cd -
+after_success:
+  - sh deployment/deploy.sh
